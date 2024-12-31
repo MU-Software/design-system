@@ -1,0 +1,25 @@
+import { Meta } from '@storybook/blocks'
+import React from 'react'
+
+import { defaultTheme } from '@/consts/default'
+
+<Meta title="Theme/Colors" />
+
+<div>
+  # Colors
+
+  {
+    Object.entries(defaultTheme.fontFamilies).map(
+      ([fontFamily, font], i) => <div key={i}>
+        <div style={{ fontFamily, fontSize: '1.5rem' }}>{fontFamily}</div>
+        <div style={{ fontFamily, fontSize: '1.5rem' }}>{font}</div>
+        <hr />
+      </div>
+    )
+  }
+</div>
+
+<style>
+  {`
+  `}
+</style>
