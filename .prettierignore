@@ -7,3 +7,4 @@
 **/storybook-static
 **/*.mdx
 **/pnpm-lock.yaml
+.github/workflows
