@@ -1,7 +1,7 @@
 name: Release
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}-release
   cancel-in-progress: true
 
 on:
