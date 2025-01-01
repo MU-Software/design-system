@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 type ThemeType = {
-  backgrounds: Record<string, React.CSSProperties['background']>;
-  fontFamilies: Record<string, React.CSSProperties['fontFamily']>;
-  borderRadiuses: string[];
+  backgrounds: Record<string, React.CSSProperties['background']>
+  fontFamilies: Record<string, React.CSSProperties['fontFamily']>
+  borderRadiuses: string[]
 }
 
 export const defaultTheme: ThemeType = {
@@ -17,14 +17,5 @@ export const defaultTheme: ThemeType = {
     serif: `Georgia, 'Times New Roman', Times, serif`,
     monospace: `'Courier New', monospace`,
   },
-  borderRadiuses: [
-    '4px',
-    '8px',
-    '12px',
-    '16px',
-    '20px',
-    '24px',
-    '28px',
-    '10000px',
-  ]
+  borderRadiuses: ['4px', '8px', '12px', '16px', '20px', '24px', '28px', '10000px'],
 }

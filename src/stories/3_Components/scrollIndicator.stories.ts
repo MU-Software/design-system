@@ -13,7 +13,7 @@ const meta = {
     indicatorStroke: '2.5px',
     indicatorAnimationDuration: 2,
     indicatorAnimationDelay: 0.15,
-  }
+  },
 } satisfies Meta<typeof ScrollIndicator>
 export default meta
 
