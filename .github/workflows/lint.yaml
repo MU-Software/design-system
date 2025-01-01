@@ -1,10 +1,11 @@
 name: Check lint
 
 on:
+  workflow_call:
   pull_request:
   push:
     branches:
-      - 'main'
+      - '!main'  # Lint for main branch is done in release.yaml
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
